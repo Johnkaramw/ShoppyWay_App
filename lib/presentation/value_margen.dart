@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class MarginManger {
   static const double m7 = 7.0;
   static const double m8 = 8.0;
