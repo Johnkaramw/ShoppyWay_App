@@ -7,6 +7,8 @@ class MarginManger {
   static const double m13 = 13.0;
   static const double m14 = 14.0;
   static const double m15 = 15.0;
+  static const double m16 = 16.0;
+  static const double m17 = 17.0;
 }
 
 class PaddingManger {
