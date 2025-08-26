@@ -36,10 +36,26 @@ ThemeData GetThemApp() {
     ),
     // elevatedtbputton theme
     elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ElevatedButton.styleFrom(),
+      style: ElevatedButton.styleFrom(
+        textStyle: GetRegular(color: ColorManager.white, fontsiz: FontSiz.s17),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(FontSiz.s12),
+        ),
+      ),
     ),
     // input them = textfield
 
     // text them
+    textTheme: TextTheme(
+      headlineSmall: GetSemiBold(
+        color: ColorManager.darkGrey,
+        fontsiz: FontSiz.s16,
+      ),
+      bodySmall: GetRegular(color: ColorManager.grey1, fontsiz: FontSiz.s15),
+      titleSmall: GetMedium(
+        color: ColorManager.greycolor,
+        fontsiz: FontSiz.s12,
+      ),
+    ),
   );
 }
