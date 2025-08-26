@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm/presentation/colors_maneger.dart';
-import 'package:mvvm/presentation/fonts_manegar.dart';
-import 'package:mvvm/presentation/styles_manager.dart';
+import 'package:mvvm/presentation/resuorces/colors_maneger.dart';
+import 'package:mvvm/presentation/resuorces/fonts_manegar.dart';
+import 'package:mvvm/presentation/resuorces/styles_manager.dart';
+import 'package:mvvm/presentation/resuorces/value_margen.dart';
 
 ThemeData GetThemApp() {
   return ThemeData(
@@ -44,7 +45,30 @@ ThemeData GetThemApp() {
       ),
     ),
     // input them = textfield
-
+    inputDecorationTheme: InputDecorationTheme(
+      contentPadding: EdgeInsets.all(paddsiz.p12),
+      hintStyle: GetRegular(color: ColorManager.grey1, fontsiz: FontSiz.s13),
+      labelStyle: GetMedium(
+        color: ColorManager.greycolor,
+        fontsiz: FontSiz.s15,
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: ColorManager.grey1, width: FontSiz.s1_5),
+        borderRadius: BorderRadius.all(Radius.circular(paddsiz.p7)),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(paddsiz.p8),
+        borderSide: BorderSide(color: ColorManager.grey1, width: FontSiz.s13),
+      ),
+      errorBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: ColorManager.grey1, width: FontSiz.s14),
+        borderRadius: BorderRadius.all(Radius.circular(paddsiz.p7)),
+      ),
+      focusedErrorBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: ColorManager.grey1, width: FontSiz.s15),
+        borderRadius: BorderRadius.all(Radius.circular(paddsiz.p8)),
+      ),
+    ),
     // text them
     textTheme: TextTheme(
       headlineSmall: GetSemiBold(

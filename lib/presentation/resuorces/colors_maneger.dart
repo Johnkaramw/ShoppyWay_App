@@ -10,5 +10,5 @@ class ColorManager {
   static Color withtPrimary = const Color(0xccd17d11);
   static Color grey1 = const Color(0xff707070);
   static Color white = const Color(0xffFFFFFF);
-  static Color error = const Color.fromARGB(255, 219, 2, 20);
+  static Color red = const Color.fromARGB(255, 219, 2, 20);
 }
