@@ -1,15 +1,16 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:mvvm/presentation/ditelspage/ditelspage.dart';
 import 'package:mvvm/presentation/forgotpasspage/forgotpasspage.dart';
 import 'package:mvvm/presentation/loginpage/loginpage.dart';
 import 'package:mvvm/presentation/mainpage/mainpage.dart';
+import 'package:mvvm/presentation/onboarding/onpoarding_page.dart';
+import 'package:mvvm/presentation/resuorces/strings_manager.dart';
 import 'package:mvvm/presentation/signinhpage/signinhpage.dart';
 import 'package:mvvm/presentation/splashpage/splashpage.dart';
 
 class RoutesManager {
-  static const String splashpage = "/";
+  static const String splashpage = "/splashpage";
+  static const String OnBoarding = "/OnBoarding";
   static const String loginpage = "/";
   static const String signinhpage = "/";
   static const String forgotpasspage = "/";
@@ -25,6 +26,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => Splashpage());
       case RoutesManager.loginpage:
         return MaterialPageRoute(builder: (_) => Loginpage());
+      case RoutesManager.OnBoarding:
+        return MaterialPageRoute(builder: (_) => OnpoardingPage());
       case RoutesManager.signinhpage:
         return MaterialPageRoute(builder: (_) => Signinhpage());
       case RoutesManager.mainpage:
@@ -41,8 +44,8 @@ class RouteGenerator {
   static Route<dynamic> UndifinRoutes() {
     return MaterialPageRoute(
       builder: (_) => Scaffold(
-        appBar: AppBar(title: Text('not found page')),
-        body: Center(child: Text('not found page ,try agein')),
+        appBar: AppBar(title: Text(StringsManager.Unfoundpage)),
+        body: Center(child: Text(StringsManager.Unfoundpage)),
       ),
     );
   }
