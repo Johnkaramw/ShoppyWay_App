@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:mvvm/presentation/resuorces/assete_manager.dart';
 import 'package:mvvm/presentation/resuorces/colors_maneger.dart';
+import 'package:mvvm/presentation/resuorces/constants_manager.dart';
 import 'package:mvvm/presentation/resuorces/routes_manager.dart';
 
 class Splashpage extends StatefulWidget {
@@ -15,7 +16,7 @@ class Splashpage extends StatefulWidget {
 class _SplashpageState extends State<Splashpage> {
   Timer? _timer;
   _startDelay() {
-    _timer = Timer(Duration(seconds: 2), _goNext);
+    _timer = Timer(Duration(seconds: ConstantsManager.splashpage), _goNext);
   }
 
   _goNext() {
