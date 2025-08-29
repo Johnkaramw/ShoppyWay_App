@@ -5,6 +5,7 @@ import 'package:mvvm/presentation/resuorces/assete_manager.dart';
 import 'package:mvvm/presentation/resuorces/colors_maneger.dart';
 import 'package:mvvm/presentation/resuorces/constants_manager.dart';
 import 'package:mvvm/presentation/resuorces/routes_manager.dart';
+import 'package:mvvm/presentation/resuorces/strings_manager.dart';
 
 class Splashpage extends StatefulWidget {
   const Splashpage({super.key});
@@ -33,7 +34,19 @@ class _SplashpageState extends State<Splashpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorManager.primary,
-      body: Center(child: Image(image: AssetImage(AsseteManager.logo))),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image(image: AssetImage(AsseteManager.logo)),
+            SizedBox(height: ConstantsManager.sizboxhit10),
+            Text(
+              StringsManager.textspalshlogo,
+              style: Theme.of(context).textTheme.headlineSmall,
+            ),
+          ],
+        ),
+      ),
     );
   }
 

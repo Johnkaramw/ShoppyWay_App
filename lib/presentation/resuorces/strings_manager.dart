@@ -7,4 +7,5 @@ class StringsManager {
   static String onpoardingsuptitle1 = "يمكنك شراء كل ما تحتاجه من خلالنا ";
   static String onpoardingsuptitle2 = "اشتري كل ما يلزمك فى الحياة ";
   static String onpoardingsuptitle3 = "اسرع توصيل على المجره ";
+  static String textspalshlogo = "ShoppyWay";
 }

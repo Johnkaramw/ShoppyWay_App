@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:mvvm/presentation/onboarding/class_onboarding.dart';
+import 'package:mvvm/presentation/onboarding/onpoarding_home.dart';
 import 'package:mvvm/presentation/resuorces/assete_manager.dart';
 import 'package:mvvm/presentation/resuorces/colors_maneger.dart';
 import 'package:mvvm/presentation/resuorces/strings_manager.dart';
@@ -14,7 +15,7 @@ class OnpoardingPage extends StatefulWidget {
 
 final PageController _pageController = PageController();
 int _CurrentIndex = 0;
-late final List<Onboardinglist> _List = _getonpoardinglist();
+final List<Onboardinglist> _List = _getonpoardinglist();
 List<Onboardinglist> _getonpoardinglist() => [
   Onboardinglist(
     AsseteManager.onpoarding1,
@@ -52,8 +53,29 @@ class _OnpoardingPageState extends State<OnpoardingPage> {
             _CurrentIndex = index;
           });
         },
-        itemBuilder: (context, index) {},
+        itemBuilder: (context, index) {
+          return null;
+        },
       ),
+    );
+  }
+}
+
+class OnpoardingHome extends StatelessWidget {
+  final Onboardinglist _onboardinglist;
+  const OnpoardingHome(this._onboardinglist, {super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        Text(
+          _onboardinglist.title,
+          textAlign: TextAlign.center,
+          style: Theme.of(context).textTheme.headlineSmall,
+        ),
+      ],
     );
   }
 }
