@@ -39,7 +39,7 @@ class _SplashpageState extends State<Splashpage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image(image: AssetImage(AsseteManager.logo)),
-            SizedBox(height: ConstantsManager.sizboxhit10),
+            SizedBox(height: SizBoxManager.sizboxhit10),
             Text(
               StringsManager.textspalshlogo,
               style: Theme.of(context).textTheme.headlineSmall,

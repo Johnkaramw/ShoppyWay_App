@@ -46,7 +46,7 @@ ThemeData GetThemApp() {
     ),
     // input them = textfield
     inputDecorationTheme: InputDecorationTheme(
-      contentPadding: EdgeInsets.all(paddsiz.p12),
+      contentPadding: EdgeInsets.all(PadingManager.p12),
       hintStyle: GetRegular(color: ColorManager.grey1, fontsiz: FontSiz.s13),
       labelStyle: GetMedium(
         color: ColorManager.greycolor,
@@ -54,28 +54,28 @@ ThemeData GetThemApp() {
       ),
       enabledBorder: OutlineInputBorder(
         borderSide: BorderSide(color: ColorManager.grey1, width: FontSiz.s1_5),
-        borderRadius: BorderRadius.all(Radius.circular(paddsiz.p7)),
+        borderRadius: BorderRadius.all(Radius.circular(PadingManager.p7)),
       ),
       focusedBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(paddsiz.p8),
+        borderRadius: BorderRadius.circular(PadingManager.p8),
         borderSide: BorderSide(color: ColorManager.grey1, width: FontSiz.s13),
       ),
       errorBorder: OutlineInputBorder(
         borderSide: BorderSide(color: ColorManager.grey1, width: FontSiz.s14),
-        borderRadius: BorderRadius.all(Radius.circular(paddsiz.p7)),
+        borderRadius: BorderRadius.all(Radius.circular(PadingManager.p7)),
       ),
       focusedErrorBorder: OutlineInputBorder(
         borderSide: BorderSide(color: ColorManager.grey1, width: FontSiz.s15),
-        borderRadius: BorderRadius.all(Radius.circular(paddsiz.p8)),
+        borderRadius: BorderRadius.all(Radius.circular(PadingManager.p8)),
       ),
     ),
     // text them
     textTheme: TextTheme(
       headlineSmall: GetSemiBold(
         color: ColorManager.darkGrey,
-        fontsiz: FontSiz.s16,
+        fontsiz: FontSiz.s22,
       ),
-      bodySmall: GetRegular(color: ColorManager.grey1, fontsiz: FontSiz.s15),
+      bodySmall: GetRegular(color: ColorManager.grey1, fontsiz: FontSiz.s18),
       titleSmall: GetMedium(
         color: ColorManager.greycolor,
         fontsiz: FontSiz.s12,

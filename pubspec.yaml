@@ -11,6 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
+  flutter_launcher_icons: ^0.14.4
 
 dev_dependencies:
   flutter_test:
@@ -20,13 +21,13 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
   assets:
     - assets/image/
     - assets/image/2.0x/shop.png
+    - assets/image/onporading/1.png
+    - assets/image/onporading/2.png
+    - assets/image/onporading/3.png
 
-
-  # إضافة الخطوط
   fonts:
     - family: Montserrat
       fonts:
@@ -41,3 +42,8 @@ flutter:
         - asset: assets/fonts/Montserrat-ExtraBold.ttf
           weight: 900
           style: italic
+
+flutter_icons:
+  image_path: "assets/image/logoapp.png"
+  android: true
+  ios: true

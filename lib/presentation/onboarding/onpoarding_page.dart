@@ -28,7 +28,7 @@ List<Onboardinglist> _getonpoardinglist() => [
     StringsManager.onpoardingsuptitle3,
   ),
   Onboardinglist(
-    AsseteManager.onpoarding1,
+    AsseteManager.onpoarding3,
     StringsManager.onpoardingsuptitle2,
     StringsManager.onpoardingtitle3,
   ),
@@ -54,28 +54,9 @@ class _OnpoardingPageState extends State<OnpoardingPage> {
           });
         },
         itemBuilder: (context, index) {
-          return null;
+          return OnpoardingHome(_List[index]);
         },
       ),
-    );
-  }
-}
-
-class OnpoardingHome extends StatelessWidget {
-  final Onboardinglist _onboardinglist;
-  const OnpoardingHome(this._onboardinglist, {super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        Text(
-          _onboardinglist.title,
-          textAlign: TextAlign.center,
-          style: Theme.of(context).textTheme.headlineSmall,
-        ),
-      ],
     );
   }
 }

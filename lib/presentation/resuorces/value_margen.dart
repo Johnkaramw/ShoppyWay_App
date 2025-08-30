@@ -11,7 +11,7 @@ class MarginManager {
   static const double m17 = 17.0;
 }
 
-class paddsiz {
+class PadingManager {
   static const double p7 = 7.0;
   static const double p8 = 8.0;
   static const double p10 = 10.0;
