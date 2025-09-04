@@ -14,7 +14,7 @@ class OnpoardingPage extends StatefulWidget {
 }
 
 final PageController _pageController = PageController();
-int _CurrentIndex = 0;
+int _currentIndex = 0;
 final List<Onboardinglist> _List = _getonpoardinglist();
 List<Onboardinglist> _getonpoardinglist() => [
   Onboardinglist(
@@ -50,7 +50,7 @@ class _OnpoardingPageState extends State<OnpoardingPage> {
         itemCount: _List.length,
         onPageChanged: (index) {
           setState(() {
-            _CurrentIndex = index;
+            _currentIndex = index;
           });
         },
         itemBuilder: (context, index) {
