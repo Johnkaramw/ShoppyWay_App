@@ -14,7 +14,7 @@ class OnpoardingHome extends StatelessWidget {
       children: [
         SizedBox(height: SizBoxManager.sizboxhit20),
         Padding(
-          padding: const EdgeInsets.all(PadingManager.p15),
+          padding: const EdgeInsets.all(SizManager.s15),
           child: Text(
             _onboardinglist.title,
             textAlign: TextAlign.center,
@@ -23,7 +23,7 @@ class OnpoardingHome extends StatelessWidget {
         ),
         SizedBox(height: SizBoxManager.sizboxhit15),
         Padding(
-          padding: const EdgeInsets.all(PadingManager.p13),
+          padding: const EdgeInsets.all(SizManager.s13),
           child: Text(
             _onboardinglist.suptitle,
             textAlign: TextAlign.center,

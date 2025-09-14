@@ -11,7 +11,7 @@ import 'package:mvvm/presentation/splashpage/splashpage.dart';
 class RoutesManager {
   static const String splashpage = "/splashpage";
   static const String OnBoarding = "/OnBoarding";
-  static const String loginpage = "/";
+  static const String loginpage = "/Loginpage";
   static const String signinhpage = "/";
   static const String forgotpasspage = "/";
   static const String mainpage = "/";

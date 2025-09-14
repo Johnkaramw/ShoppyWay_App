@@ -46,7 +46,7 @@ ThemeData GetThemApp() {
     ),
     // input them = textfield
     inputDecorationTheme: InputDecorationTheme(
-      contentPadding: EdgeInsets.all(PadingManager.p12),
+      contentPadding: EdgeInsets.all(SizManager.s12),
       hintStyle: GetRegular(color: ColorManager.grey1, fontsiz: FontSiz.s13),
       labelStyle: GetMedium(
         color: ColorManager.greycolor,
@@ -54,19 +54,19 @@ ThemeData GetThemApp() {
       ),
       enabledBorder: OutlineInputBorder(
         borderSide: BorderSide(color: ColorManager.grey1, width: FontSiz.s1_5),
-        borderRadius: BorderRadius.all(Radius.circular(PadingManager.p7)),
+        borderRadius: BorderRadius.all(Radius.circular(SizManager.s7)),
       ),
       focusedBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(PadingManager.p8),
+        borderRadius: BorderRadius.circular(SizManager.s8),
         borderSide: BorderSide(color: ColorManager.grey1, width: FontSiz.s13),
       ),
       errorBorder: OutlineInputBorder(
         borderSide: BorderSide(color: ColorManager.grey1, width: FontSiz.s14),
-        borderRadius: BorderRadius.all(Radius.circular(PadingManager.p7)),
+        borderRadius: BorderRadius.all(Radius.circular(SizManager.s7)),
       ),
       focusedErrorBorder: OutlineInputBorder(
         borderSide: BorderSide(color: ColorManager.grey1, width: FontSiz.s15),
-        borderRadius: BorderRadius.all(Radius.circular(PadingManager.p8)),
+        borderRadius: BorderRadius.all(Radius.circular(SizManager.s8)),
       ),
     ),
     // text them

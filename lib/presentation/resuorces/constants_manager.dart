@@ -1,5 +1,6 @@
 class ConstantsManager {
   static const int splashpage = 2;
+  static const int time = 100;
 }
 
 class SizBoxManager {

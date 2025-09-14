@@ -8,4 +8,5 @@ class StringsManager {
   static String onpoardingsuptitle2 = "اشتري كل ما يلزمك فى الحياة ";
   static String onpoardingsuptitle3 = "اسرع توصيل على المجره ";
   static String textspalshlogo = "ShoPpyWay";
+  static String skip = "Skip";
 }

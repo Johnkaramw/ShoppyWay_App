@@ -6,6 +6,10 @@ class ColorManager {
   static Color greycolor = const Color.fromARGB(255, 218, 102, 102);
   static Color lightGrey = const Color.fromARGB(255, 165, 57, 143);
   // new colors
+  static Color yalow = const Color.fromARGB(255, 224, 222, 84);
+
+  static Color blou = const Color.fromARGB(255, 91, 32, 201);
+
   static Color darkPrimary = const Color(0xffd17d11);
   static Color withtPrimary = const Color(0xccd17d11);
   static Color grey1 = const Color(0xff707070);
